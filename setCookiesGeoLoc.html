@@ -1,0 +1,44 @@
+<script>
+ (function(){
+ var cookieName = "LeadCity"; // Nome do Cookie
+ var cookieValue = {{jsc - city (fb)}}; // Valor do Cookie
+ var expirationTime = 31536000; // Um ano em segundos
+ expirationTime = expirationTime * 1000;
+ var date = new Date(); 
+ var dateTimeNow = date.getTime(); 
+
+ date.setTime(dateTimeNow + expirationTime);
+ var date = date.toUTCString();
+ document.cookie = cookieName+"="+cookieValue+"; SameSite=None; Secure; expires="+date+"; path=/; domain=.alemdafotografia.net";  
+})();
+</script>
+
+<script>
+ (function(){
+ var cookieName = "LeadState"; // Nome do Cookie
+ var cookieValue = {{dlv - visitorApiRegion}}; // Valor do Cookie
+ var expirationTime = 31536000; // Um ano em segundos
+ expirationTime = expirationTime * 1000;
+ var date = new Date(); 
+ var dateTimeNow = date.getTime(); 
+
+ date.setTime(dateTimeNow + expirationTime);
+ var date = date.toUTCString();
+ document.cookie = cookieName+"="+cookieValue+"; SameSite=None; Secure; expires="+date+"; path=/; domain=.alemdafotografia.net";  
+})();
+</script>
+
+<script>
+ (function(){
+ var cookieName = "LeadCountry"; // Nome do Cookie
+ var cookieValue = {{dlv - visitorApiCountryCode}}; // Valor do Cookie
+ var expirationTime = 31536000; // Um ano em segundos
+ expirationTime = expirationTime * 1000;
+ var date = new Date(); 
+ var dateTimeNow = date.getTime(); 
+
+ date.setTime(dateTimeNow + expirationTime);
+ var date = date.toUTCString();
+ document.cookie = cookieName+"="+cookieValue+"; SameSite=None; Secure; expires="+date+"; path=/; domain=.alemdafotografia.net";  
+})();
+</script>
